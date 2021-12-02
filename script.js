@@ -58,17 +58,23 @@ const handleSubmit = () => {
         patternContainer.appendChild(emailContainer);
 
         // copy button for email pattern
-        let copyBtn = document.createElement('input');
-        copyBtn.setAttribute('id', 'btn-copy-' + index);
-        copyBtn.setAttribute('value', 'Copy');
-        copyBtn.classList.add('btn');
-        copyBtn.classList.add('btn-outline-primary');
+        let copyBtn = document.createElement('img');
+        copyBtn.setAttribute('src', 'clipboardIcon.png');
+        copyBtn.setAttribute('width', '24px');
+        copyBtn.setAttribute('height', '24px');
+        copyBtn.setAttribute('alt', 'Copy');
+        copyBtn.classList.add('copyEmail');
         copyBtn.classList.add('pattern-container');
-        copyBtn.classList.add('pattern-container');
-        //  'link-secondary', 'pattern-container']);
-        copyBtn.setAttribute('type', 'button');
+
+        // let copyBtn = document.createElement('input');
+        // copyBtn.setAttribute('id', 'btn-copy-' + index);
+        // copyBtn.setAttribute('value', 'Copy');
+        // copyBtn.classList.add('btn');
+        // copyBtn.classList.add('btn-sm');
+        // copyBtn.classList.add('btn-outline-primary');
+        // copyBtn.classList.add('pattern-container');
+        // copyBtn.setAttribute('type', 'button');
         copyBtn.addEventListener('click', handleCopy);
-        // copyBtn.classList.add(['pattern-container']);
         patternContainer.appendChild(copyBtn);
 
         outputElement.appendChild(patternContainer);

@@ -13,3 +13,7 @@
 .pattern-container {
     margin: 0.2rem;
 }
+
+.copyEmail:hover {
+    cursor: pointer;
+}
