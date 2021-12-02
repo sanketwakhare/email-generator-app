@@ -16,6 +16,7 @@ const handleSubmit = () => {
 
     // generate patterns
     let patterns = [];
+    patterns.push(firstName + '.' + lastName + '@' + domainName + domain);
     patterns.push(firstName + lastName + '@' + domainName + domain);
     patterns.push(firstName + '_' + lastName + '@' + domainName + domain);
     patterns.push(firstName.charAt(0) + lastName + '@' + domainName + domain);
